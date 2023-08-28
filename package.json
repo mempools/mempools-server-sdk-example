@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "mempools-server-sdk": "file:../mempools-server-sdk"
+    "mempools-server-sdk": "^1.0.1"
   }
 }
