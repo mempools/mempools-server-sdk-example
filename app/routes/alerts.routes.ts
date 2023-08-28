@@ -5,12 +5,14 @@ import { alertController } from "@controller/AlertController";
 const alertsRoutes = Router();
 
 // ------------ GET REQUESTS
-alertsRoutes.get("/api/:id", alertController.getAlert);
+alertsRoutes.post("/api/get-alerts", alertController.getAlert);
+alertsRoutes.post("/api/get-alert-by-id", alertController.getAlertById);
 
-// ------------ POST REQUESTS
+// // ------------ POST REQUESTS
 alertsRoutes.post("/api/create-monitor", alertController.createMonitorAlert);
 alertsRoutes.post("/api/create-sc", alertController.createSmartContractAlert);
-alertsRoutes.post("/api/disable:id", alertController.disableAlert);
-alertsRoutes.post("/api/enable:id", alertController.enableAlert);
+alertsRoutes.post("/api/disable-alert", alertController.disableAlert);
+alertsRoutes.post("/api/enable-alert", alertController.enableAlert);
+alertsRoutes.post("/api/delete", alertController.deleteAlert);
 
 export default alertsRoutes;

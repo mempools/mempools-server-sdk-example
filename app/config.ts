@@ -1,4 +1,4 @@
-import { mempools } from "mempools-sdk";
+import { mempools } from "mempools-server-sdk";
 
 mempools.config({
   clientToken: process.env.CLIENT_TOKEN,

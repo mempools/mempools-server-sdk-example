@@ -6,8 +6,6 @@ import express from "express";
 import "./config";
 import alertsRoutes from "@routes/alerts.routes";
 
-global.XMLHttpRequest = require("xhr2");
-
 class App {
   public app: express.Application;
 
